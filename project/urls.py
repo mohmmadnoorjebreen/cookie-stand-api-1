@@ -33,4 +33,3 @@ urlpatterns = [
         name="token_refresh",
     ),
 ]
-
