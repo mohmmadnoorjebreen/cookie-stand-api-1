@@ -18,5 +18,5 @@ class CookieStandDetail(RetrieveUpdateDestroyAPIView):
     serializer_class = CookieStandSerializer
 
 class CookieStandCreateView(CreateAPIView):
-    queryset = CookieStand.hourly_sales
+    queryset = CookieStand.objects.all()
     serializer_class = CookieStandSerializer
