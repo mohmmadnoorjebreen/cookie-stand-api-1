@@ -4,7 +4,7 @@ from django.db import models
 
 class CookieStand(models.Model):
 
-    hourly_sales = models.JSONField(default=list, blank=True)
+    hourly_sales = models.TextField()
 
     def __str__(self):
         return self.name
