@@ -1,7 +1,7 @@
 from rest_framework.generics import (
     ListCreateAPIView,
     RetrieveUpdateDestroyAPIView,
-    CreateAPIView,
+
 )
 from .models import CookieStand
 from .permissions import IsOwnerOrReadOnly
@@ -17,6 +17,4 @@ class CookieStandDetail(RetrieveUpdateDestroyAPIView):
     queryset = CookieStand.objects.all()
     serializer_class = CookieStandSerializer
 
-class CookieStandCreateView(CreateAPIView):
-    queryset = CookieStand.objects.all()
-    serializer_class = CookieStandSerializer
+
